@@ -76,7 +76,7 @@ public class SalesforceRestStarter {
 
             // query contacts
             final URIBuilder builder = new URIBuilder(instanceUrl);
-            builder.setPath("/services/data/v20.0/query/").setParameter("q", "SELECT Id, Name FROM Contact");
+            builder.setPath("/services/data/v39.0/query/").setParameter("q", "SELECT Id, Name FROM Contact");
 
             final HttpGet get = new HttpGet(builder.build());
             get.setHeader("Authorization", "Bearer " + accessToken);
